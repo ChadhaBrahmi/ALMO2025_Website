@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Frise Temporelle - Camp</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5f5f5;
+      padding: 40px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 60px;
+      color: #333;
+    }
+
+    .timeline {
+      position: relative;
+      width: 100%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: #4CAF50;
+      transform: translateY(-50%);
+      z-index: 1;
+    }
+
+    .event {
+      position: relative;
+      width: 260px;
+      background: white;
+      border-radius: 8px;
+      padding: 12px 16px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      z-index: 2;
+    }
+
+    .event:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .timeline-event {
+      position: absolute;
+      transform: translateX(-50%);
+      text-align: center;
+    }
+
+    .timeline-event::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 16px;
+      height: 16px;
+      background: #4CAF50;
+      border: 3px solid white;
+      border-radius: 50%;
+      z-index: 3;
+    }
+
+    .top {
+      bottom: 100%;
+      margin-bottom: 30px;
+    }
+
+    .bottom {
+      top: 100%;
+      margin-top: 30px;
+    }
+
+    .date {
+      font-weight: bold;
+      margin-bottom: 6px;
+      color: #4CAF50;
+    }
+
+    /* Positioning */
+    .timeline-event:nth-child(1)  { left: 5%;  }
+    .timeline-event:nth-child(2)  { left: 15%; }
+    .timeline-event:nth-child(3)  { left: 25%; }
+    .timeline-event:nth-child(4)  { left: 35%; }
+    .timeline-event:nth-child(5)  { left: 45%; }
+    .timeline-event:nth-child(6)  { left: 55%; }
+    .timeline-event:nth-child(7)  { left: 65%; }
+    .timeline-event:nth-child(8)  { left: 75%; }
+    .timeline-event:nth-child(9)  { left: 85%; }
+    .timeline-event:nth-child(10) { left: 95%; }
+
+    @media screen and (max-width: 768px) {
+      .timeline-event {
+        position: static;
+        transform: none;
+        margin: 40px auto;
+      }
+
+      .timeline::before {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Frise Temporelle du Camp</h2>
+
+  <div class="timeline">
+    <div class="timeline-event top">
+      <div class="event">
+        <div class="date">21/06</div>
+        Arrival
+      </div>
+    </div>
+
+    <div class="timeline-event bottom">
+      <div class="event">
+        <div class="date">22/06</div>
+        Opening Ceremony
+      </div>
+    </div>
+
+    <div class="timeline-event top">
+      <div class="event">
+        <div class="date">23–26/06</div>
+        Training Days
+      </div>
+    </div>
+
+    <div class="timeline-event bottom">
+      <div class="event">
+        <div class="date">27/06</div>
+        Rest Day (Friday)
+      </div>
+    </div>
+
+    <div class="timeline-event top">
+      <div class="event">
+        <div class="date">28/06–02/07</div>
+        Training Days
+      </div>
+    </div>
+
+    <div class="timeline-event bottom">
+      <div class="event">
+        <div class="date">03/07</div>
+        Rest Day (Before Contest)
+      </div>
+    </div>
+
+    <div class="timeline-event top">
+      <div class="event">
+        <div class="date">04–05/07</div>
+        Contest Days
+      </div>
+    </div>
+
+    <div class="timeline-event bottom">
+      <div class="event">
+        <div class="date">06/07</div>
+        Rest Day
+      </div>
+    </div>
+
+    <div class="timeline-event top">
+      <div class="event">
+        <div class="date">07/07</div>
+        Closing Ceremony
+      </div>
+    </div>
+
+    <div class="timeline-event bottom">
+      <div class="event">
+        <div class="date">08/08</div>
+        Departures
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
