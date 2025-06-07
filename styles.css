@@ -520,11 +520,21 @@ nav {
 
     .grid-item h3 {
         font-weight: 500;
-        font-size: 12px;
+    }
+
+    .three-grid {
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .five-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-item img {
+        height: 50vw;
+        width: 50vw;
+        margin: 10px;
+        object-fit: contain;
     }
 
     .grid-item2 img {
