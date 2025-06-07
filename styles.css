@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&display=swap');
 
 
-a{
+a {
     color: inherit;
     text-decoration: none;
 }
@@ -41,7 +41,7 @@ body {
     -webkit-backdrop-filter: blur(5px);
     background-image: url('noise.png');
     background-size: cover;
-
+    max-width: 90%;
     padding: 40px;
     border-radius: 30px;
     text-align: center;
@@ -52,7 +52,7 @@ body {
     border: 2px solid rgba(199, 138, 17, 0.282);
 }
 
-.btn{
+.btn {
     padding: 10px 25px;
     border-radius: 10px;
     background-image: url('noise.png');
@@ -62,7 +62,7 @@ body {
     display: inline-block;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease-in-out;
-    color:white;
+    color: white;
     text-decoration: none;
     font-weight: 600;
 }
@@ -89,11 +89,12 @@ body {
     }
 }
 
-#almo{
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 400px;
-    padding-right: 400px;
+#almo {
+    width: calc(min(1150px, 95%));
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
     display: grid;
     grid-auto-columns: 1fr;
     grid-auto-flow: column;
@@ -101,7 +102,14 @@ body {
 
 }
 
-#almo div img{
+@media screen and (max-width: 1200px) {
+    #almo .hide-on-phone {
+        display: none;
+    }
+
+}
+
+#almo div img {
 
     width: 100%;
     height: auto;
@@ -110,11 +118,11 @@ body {
     transition: transform 0.3s ease-in-out;
 }
 
-h2{
+h2 {
     font-size: 30px;
 }
 
-#planning{
+#planning {
     background-color: black;
     color: white;
     background-image: url('blackboard2.jpg');
@@ -126,18 +134,18 @@ h2{
 
 * {
     box-sizing: border-box;
-  }
-  
-  
-  /* The actual timeline (the vertical ruler) */
-  .timeline {
+}
+
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
-  }
-  
-  /* The actual timeline (the vertical ruler) */
-  .timeline::after {
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
     content: '';
     position: absolute;
     width: 6px;
@@ -146,18 +154,18 @@ h2{
     bottom: 0;
     left: 50%;
     margin-left: -3px;
-  }
-  
-  /* Container around content */
-  .container {
+}
+
+/* Container around content */
+.container {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
     width: 50%;
-  }
-  
-  /* The circles on the timeline */
-  .container::after {
+}
+
+/* The circles on the timeline */
+.container::after {
     content: '';
     position: absolute;
     width: 25px;
@@ -168,20 +176,20 @@ h2{
     top: 15px;
     border-radius: 50%;
     z-index: 1;
-  }
-  
-  /* Place the container to the left */
-  .left {
+}
+
+/* Place the container to the left */
+.left {
     left: 0;
-  }
-  
-  /* Place the container to the right */
-  .right {
+}
+
+/* Place the container to the right */
+.right {
     left: 50%;
-  }
-  
-  /* Add arrows to the left container (pointing right) */
-  .left::before {
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
     content: " ";
     height: 0;
     position: absolute;
@@ -192,10 +200,10 @@ h2{
     border: medium solid white;
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent white;
-  }
-  
-  /* Add arrows to the right container (pointing left) */
-  .right::before {
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
     content: " ";
     height: 0;
     position: absolute;
@@ -206,15 +214,15 @@ h2{
     border: medium solid white;
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
-  }
-  
-  /* Fix the circle for containers on the right side */
-  .right::after {
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
     left: -16px;
-  }
-  
-  /* The actual content */
-  .content {
+}
+
+/* The actual content */
+.content {
     background-color: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -224,55 +232,77 @@ h2{
     border: 3px solid white;
     position: relative;
     border-radius: 6px;
-  }
-  
-  /* Media queries - Responsive timeline on screens less than 600px wide */
-  @media screen and (max-width: 600px) {
+}
+
+table,
+tr,
+td,
+th {
+    border: solid 1px black;
+}
+
+
+@media screen and (max-width: 1149px) {
+    .pc-table {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1150px) {
+    .mobile-table {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
     /* Place the timelime to the left */
     .timeline::after {
-    left: 31px;
+        left: 31px;
     }
-    
+
     /* Full-width containers */
     .container {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
     }
-    
+
     /* Make sure that all arrows are pointing leftwards */
     .container::before {
-    left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
     }
-  
+
     /* Make sure all circles are at the same spot */
-    .left::after, .right::after {
-    left: 15px;
+    .left::after,
+    .right::after {
+        left: 15px;
     }
-    
+
     /* Make all right containers behave like the left ones */
     .right {
-    left: 0%;
+        left: 0%;
     }
-  }
+}
 
 
-  #daily{
+#daily {
     padding-top: 100px;
     padding-bottom: 100px;
     text-align: center;
-  }
+}
 
-  #daily table {
+#daily table {
     width: 100%;
     border-collapse: collapse;
     width: max-content;
     margin-left: auto;
     margin-right: auto;
-  }
+}
 
 
 
@@ -280,6 +310,13 @@ nav {
     z-index: 500;
     position: fixed;
     width: 100%;
+
+}
+
+.nav-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -289,6 +326,7 @@ nav {
     -webkit-backdrop-filter: saturate(280%) blur(5px);
     padding: 10px 20px;
     color: rgb(32, 32, 32);
+    border-radius: 0px 0px 20px 20px;
 }
 
 .logo img {
@@ -311,7 +349,7 @@ nav {
     color: rgb(32, 32, 32);
     text-decoration: none;
     transition: all 0.3s ease-in-out;
-    transform: scale(1); 
+    transform: scale(1);
 
 }
 
@@ -323,28 +361,89 @@ nav {
     color: rgb(141, 86, 14);
 }
 
+.ham-btn {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .nav-container {
+        display: block;
+    }
+
+    .nav-links {
+        display: block;
+        overflow: hidden;
+        transition: all 0.5s ease-out;
+        max-height: 0px;
+    }
+
+    .showed-nav {
+        max-height: 500px;
+        transition: all 0.5s ease-in;
+    }
+
+    .ham-btn {
+        display: inline-block;
+        border: none;
+        background-color: transparent;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 20px;
+    }
+
+    .ham-btn img {
+        height: 35px;
+        margin: 2px !important;
+        margin: auto;
+        opacity: 30%;
+        transition: all 0.3s;
+    }
+
+    .ham-btn img:hover {
+        opacity: 50%;
+        cursor: pointer;
+    }
+
+    .nav-links a {
+        display: block;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+}
 
 
-#footer{
+#footer {
     text-align: center;
     padding: 10px;
 }
 
 
-#high-school{
+#high-school {
     padding-top: 100px;
     padding-bottom: 100px;
-    padding-left: 300px;
-    padding-right: 300px;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-auto-flow: column;
-    column-gap: 50px;
     background-color: black;
     color: white;
 }
 
-#high-school div img{
+.high-school-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(min(1150px, 95%));
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-auto-flow: column;
+    column-gap: 50px;
+
+}
+
+@media screen and (max-width: 1200px) {
+    .high-school-container {
+        display: block;
+        width: 85%;
+    }
+}
+
+#high-school div img {
 
     width: 100%;
     height: auto;
@@ -353,27 +452,36 @@ nav {
     transition: transform 0.3s ease-in-out;
 }
 
-#organizers{
+#organizers {
     text-align: center;
 }
 
-.three-grid{
+.three-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
-    width: max-content;
+    width: min-content;
     margin-left: auto;
-    margin-right: auto  ;
+    margin-right: auto;
 }
 
-.grid-item img{
-    height: 300px;
-    width: 300px;
+.grid-item img {
+    height: 20vw;
+    width: 20vw;
     object-fit: contain;
 }
 
-#animators{
+@media screen and (max-width: 1100px) {
+
+    .grid-item img {
+        height: 28vw;
+        width: 28vw;
+    }
+}
+
+
+#animators {
     text-align: center;
     color: white;
     background-color: black;
@@ -382,18 +490,44 @@ nav {
 }
 
 
-.five-grid{
+.five-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 20px;
     padding: 20px;
-    width: max-content;
+    width: min-content;
     margin-left: auto;
-    margin-right: auto  ;
+    margin-right: auto;
 }
 
-.grid-item2 img{
-    height: 150px;
-    width: 150px;
+.grid-item2 img {
+    height: 12vw;
+    width: 12vw;
+    margin: 10px;
     object-fit: contain;
+}
+
+.grid-item h3 {
+    font-weight: 500;
+}
+
+.grid-item2 h3 {
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1100px) {
+    .five-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-item2 img {
+        height: 25vw;
+        width: 25vw;
+        margin: 10px;
+        object-fit: contain;
+    }
+
+    .phone-center {
+        transform: translate(15vw);
+    }
 }

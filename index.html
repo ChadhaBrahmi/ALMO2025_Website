@@ -15,17 +15,20 @@
 <body>
     <!--simple centered navbar with logo-->
     <nav>
-        <div class="logo">
-            <a href="#"><img src="ALMO.png" alt="ALMO Logo"></a>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#"><img src="ALMO.png" alt="ALMO Logo"></a>
+                <button class="ham-btn"><img src="menus.png" onclick="navToggle()"></button>
+            </div>
+            <ul class="nav-links" id="navElements">
+                <li><a href="#almo">About ALMO</a></li>
+                <li><a href="#planning">Timeline</a></li>
+                <li><a href="#daily">Daily Planning</a></li>
+                <li><a href="#high-school">Venue</a></li>
+                <li><a href="#organizers">Organizers</a></li>
+                <li><a href="#animators">Entertainement Partners</a></li>
+            </ul>
         </div>
-        <ul class="nav-links">
-            <li><a href="#almo">About ALMO</a></li>
-            <li><a href="#planning">Timeline</a></li>
-            <li><a href="#daily">Daily Planning</a></li>
-            <li><a href="#high-school">Venue</a></li>
-            <li><a href="#organizers">Organizers</a></li>
-            <li><a href="#animators">Entertainement Partners</a></li>
-        </ul>
     </nav>
 
     <div id="hero">
@@ -39,7 +42,7 @@
 
     <div id="almo">
         <div>
-            <h2>What is ALMO ?</h2>
+            <h2 style="text-align: center;">What is ALMO ?</h2>
             <p>
                 The Algerian Mathematical Olympiad (ALMO) is a prestigious national mathematics competition designed for
                 high school students across Algeria. Organized annually, ALMO serves as a platform to identify and
@@ -68,7 +71,7 @@
 
             </p>
         </div>
-        <div>
+        <div class="hide-on-phone">
             <img src="p1.jpg" alt="Students in class">
         </div>
     </div>
@@ -134,7 +137,7 @@
     </div>
     <div id="daily">
         <h2>Daily Planning</h2>
-        <table border="1" cellspacing="0" cellpadding="8">
+        <table cellspacing="0" cellpadding="8" class="pc-table">
             <thead>
                 <tr>
                     <th>Time</th>
@@ -180,9 +183,70 @@
                 </tr>
             </tbody>
         </table>
+
+        <table cellspacing="0" cellpadding="8" class="mobile-table">
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Activity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>07:30–08:15</td>
+                    <td>Breakfast</td>
+                </tr>
+                <tr>
+                    <td>08:30–10:15</td>
+                    <td>Morning Session 1</td>
+                </tr>
+                <tr>
+                    <td>10:15–10:45</td>
+                    <td>Snack</td>
+                </tr>
+                <tr>
+                    <td>10:45–12:30</td>
+                    <td>Morning Session 2</td>
+                </tr>
+                <tr>
+                    <td>12:30–14:30</td>
+                    <td>Lunch + Rest/Prayer Time</td>
+                </tr>
+                <tr>
+                    <td>14:30–16:00</td>
+                    <td>Evening Session 1</td>
+                </tr>
+                <tr>
+                    <td>16:00–16:15</td>
+                    <td>Break</td>
+                </tr>
+                <tr>
+                    <td>16:15–17:45</td>
+                    <td>Evening Session 2</td>
+                </tr>
+                <tr>
+                    <td>17:45–20:00</td>
+                    <td>Extra Activities / Free Time</td>
+                </tr>
+                <tr>
+                    <td>20:00–21:00</td>
+                    <td>Dinner</td>
+                </tr>
+                <tr>
+                    <td>21:00–22:30</td>
+                    <td>Free Time</td>
+                </tr>
+                <tr>
+                    <td>22:30</td>
+                    <td>Lights Out / Sleep</td>
+                </tr>
+            </tbody>
+        </table>
+
     </div>
     <div id="high-school">
-        <div>
+        <div class="high-school-container">
+            <div>
             <h2>About the contest venue</h2>
             <p>
                 The contest will be held at the <strong>National Mathematical High School</strong>, located in the heart
@@ -195,6 +259,7 @@
         </div>
         <div>
             <img src="hs.jpg" alt="High School Facilities">
+        </div>
         </div>
     </div>
     <div id="organizers">
@@ -248,7 +313,7 @@
                     <h3>MathTec</h3>
                 </a>
             </div>
-            <div class="grid-item2">
+            <div class="grid-item2 phone-center">
                 <a href="https://algerianoi.com" target="_blank">
                     <img src="aoi.png" alt="MathTec">
                     <h3>Algerian Olympiad in Informatics</h3>
@@ -264,5 +329,9 @@
     </div>
 
 </body>
-
+<script>
+    function navToggle(){
+        document.getElementById('navElements').classList.toggle('showed-nav');
+    }
+</script>
 </html>
