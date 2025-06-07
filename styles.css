@@ -125,7 +125,6 @@ h2 {
 #planning {
     background-color: black;
     color: white;
-    background-image: url('blackboard2.jpg');
     background-attachment: fixed;
     background-size: cover;
     padding-top: 80px;
@@ -171,8 +170,8 @@ h2 {
     width: 25px;
     height: 25px;
     right: -17px;
-    background-color: white;
-    border: 4px solid #865d2b;
+    background-color: black;
+    border: 4px solid white;
     top: 15px;
     border-radius: 50%;
     z-index: 1;
@@ -329,8 +328,10 @@ nav {
     border-radius: 0px 0px 20px 20px;
 }
 
-.logo img {
-    height: 50px;
+.logo{
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
 }
 
 
@@ -392,7 +393,7 @@ nav {
     }
 
     .ham-btn img {
-        height: 35px;
+        height: 15px;
         margin: 2px !important;
         margin: auto;
         opacity: 30%;
@@ -547,4 +548,12 @@ nav {
     .phone-center {
         transform: translate(17vw);
     }
+}
+
+.almo-logo{
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    display: inline;
 }
