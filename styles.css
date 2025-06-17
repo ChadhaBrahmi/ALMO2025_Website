@@ -246,27 +246,6 @@ p {
 }
 
 
-/* The actual timeline (the vertical ruler) */
-
-/* The actual timeline (the vertical ruler) */
-
-/* Container around content */
-
-/* The circles on the timeline */
-
-/* Place the container to the left */
-
-/* Place the container to the right */
-
-/* Add arrows to the left container (pointing right) */
-
-/* Add arrows to the right container (pointing left) */
-
-/* Fix the circle for containers on the right side */
-
-/* The actual content */
-
-
 @media screen and (max-width: 1149px) {
     .pc-table {
         display: none;
@@ -277,20 +256,6 @@ p {
     .mobile-table {
         display: none;
     }
-}
-
-
-@media screen and (max-width: 768px) {
-
-    /* Place the timelime to the left */
-
-    /* Full-width containers */
-
-    /* Make sure that all arrows are pointing leftwards */
-
-    /* Make sure all circles are at the same spot */
-
-    /* Make all right containers behave like the left ones */
 }
 
 
@@ -336,7 +301,6 @@ nav {
     box-shadow: 0px 0px 10px 10px #0007;
 }
 
-/* Gradient border */
 .nav-container::after {
     content: "";
     position: absolute;
@@ -413,6 +377,11 @@ nav {
         transition: all 0.5s ease-out;
         max-height: 0px;
         transform: translateX(-15px);
+    }
+
+    .showed-nav {
+        max-height: 500px;
+        transition: all 0.5s ease-in;
     }
 
     li {
@@ -725,12 +694,12 @@ x-sap {
     margin-top: 10px;
 }
 
-.schedule-location{
+.schedule-location {
     font-size: 14px;
 }
 
 
-.bottom-line{
+.bottom-line {
     position: absolute;
     width: 0px;
     height: 190px;
@@ -739,7 +708,7 @@ x-sap {
 }
 
 
-.right-line{
+.right-line {
     position: absolute;
     height: 0px;
     width: 315px;

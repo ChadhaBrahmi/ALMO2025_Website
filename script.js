@@ -63,11 +63,11 @@ function fillTimeline(width) {
 }
 
 
-const xsmallScreen =
+xsmallScreen =
     window.matchMedia('(max-width: 700px)');
-const smallScreen =
+smallScreen =
     window.matchMedia('(min-width: 701px) and (max-width: 1050px)');
-const mediumScreen =
+mediumScreen =
     window.matchMedia('(min-width: 1051px) and (max-width: 1500px)');
 
 
