@@ -592,12 +592,16 @@ td {
 @media screen and (max-width: 1200px) {
     .aspects-grid {
         grid-template-columns: 1fr 1fr;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 }
 
 @media screen and (max-width: 650px) {
     .aspects-grid {
         grid-template-columns: 1fr;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 }
 
