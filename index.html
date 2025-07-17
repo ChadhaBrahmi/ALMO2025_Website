@@ -1,613 +1,679 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALMO 2025</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-    <link rel="icon" href="favicon.png" type="image/png">
-    <meta name="description" content="The second edition of the Algerian Mathematical Olympiad website.">
-    <meta name="keywords" content="Algerian Mathematical Olympiad, AMO, mathematics, competition, education">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ALMO 2025</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+        <link rel="icon" href="favicon.png" type="image/png">
+        <meta name="description"
+            content="The second edition of the Algerian Mathematical Olympiad website.">
+        <meta name="keywords"
+            content="Algerian Mathematical Olympiad, AMO, mathematics, competition, education">
+    </head>
 
-<body>
-    <nav>
-        <div class="nav-container">
-            <div class="logo">
-                <a href="#">
-                    <div class="almo-logo">ALMO 2025</div>
-                </a>
-                <button class="ham-btn">
-                    <picture>
-                        <source srcset="menus.webp" type="image/webp">
-                        <img src="menus.png" onclick="navToggle()" alt="Menu">
-                    </picture>
-                </button>
-            </div>
-            <ul class="nav-links" id="navElements">
-                <li><a href="#almo">About ALMO</a></li>
-                <li><a href="#planning">Timeline</a></li>
-                <li><a href="#daily">Daily Planning</a></li>
-                <li><a href="#high-school">Venue</a></li>
-                <li><a href="#organizers">Organizers</a></li>
-                <li><a href="#animators">Entertainement Partners</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <div id="hero">
-        <div>
-            <div>
-                <div style="display: block;" class="hero-content">
-                    <h1>Algerian Mathematical Olympiad 2025</h1>
-                    <p>The official website for the second edition of the most prestigious mathematics competition for
-                        middle and high school students.</p>
-                    <a class="more-btn" href="#almo">
-                        <span class="inner">See More</span>
+    <body>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="#">
+                        <div class="almo-logo">ALMO 2025</div>
                     </a>
+                    <button class="ham-btn">
+                        <picture>
+                            <source srcset="menus.webp" type="image/webp">
+                            <img src="menus.png" onclick="navToggle()"
+                                alt="Menu">
+                        </picture>
+                    </button>
                 </div>
+                <ul class="nav-links" id="navElements">
+                    <li><a href="#almo">About ALMO</a></li>
+                    <li><a href="#planning">Timeline</a></li>
+                    <li><a href="#daily">Daily Planning</a></li>
+                    <li><a href="#high-school">Venue</a></li>
+                    <li><a href="#organizers">Organizers</a></li>
+                    <li><a href="#exams">Contest</a></li>
+                    <li><a href="#animators">Entertainement Partners</a></li>
+                </ul>
             </div>
-        </div>
-        <div>
-            <picture>
-                <source srcset="infty.webp" type="image/webp">
-                <img class="hero-img" src="infty.png">
-            </picture>
-        </div>
-    </div>
+        </nav>
 
-    <x-sep></x-sep>
-
-    <div id="almo">
-        <div class="almo-content" style="max-width: 1000px;">
-            <h2>Welcome to ALMO 2025</h2>
-            <p>
-                The Algerian Mathematical Olympiad (ALMO) is a prestigious national mathematics competition designed
-                for
-                high school students across Algeria. Organized annually, ALMO serves as a platform to identify and
-                nurture the most talented young mathematicians in the country. It aims not only to promote
-                mathematical
-                excellence but also to inspire a deep appreciation for the beauty and rigor of mathematical thinking
-                among students.
-            </p>
-            <p>
-                ALMO is held in alignment with the International Mathematical Olympiad (IMO) syllabus, covering key
-                areas such as algebra, geometry, number theory, and combinatorics. The competition challenges
-                students
-                with creative, non-standard problems that test their problem-solving skills, logical reasoning, and
-                mathematical ingenuity; well beyond the typical school curriculum.
-            </p>
-            <p>
-
-                Top-performing students in ALMO are selected for further training and may earn the opportunity to
-                represent Algeria in prestigious international competitions such as the IMO, the Pan-African
-                Mathematics
-                Olympiad (PAMO), and other global math contests.
-            </p>
-            <p>
-
-                Through ALMO, Algeria strengthens its commitment to excellence in STEM education and contributes to
-                the
-                international mathematical community by cultivating a new generation of problem solvers, thinkers,
-                and
-                innovators.
-
-
-            </p>
-        </div>
-        <div>
-            <picture>
-                <source srcset="image3.webp" type="image/webp">
-                <img src="image3.png" class="olymp hide-on-phone">
-            </picture>
-        </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <x-sap></x-sap>
-    <br>
-    <br>
-    <div style="margin-left: 10px;margin-right: 10px;">
-        <h2 style="text-align: center;">Key aspects of the Algerian Mathematical Olympiad 2025</h2>
-        <div class="aspects-grid">
+        <div id="hero">
             <div>
-                <img src="fi-rr-user-remove.png">
-                <h3>Selection Process</h3>
-                <p>Students are initially selected based on their performance in mathematics during the school
-                    year,
-                    with a focus on those achieving a high average in their mathematics classes.</p>
-            </div>
-            <div>
-                <img src="fi-rr-megaphone.png">
-                <h3>Training Camp</h3>
-                <p>Selected students participate in a week-long training camp where they receive intensive
-                    training
-                    and
-                    problem-solving practice.</p>
-            </div>
-            <div>
-                <img src="fi-rr-plane.png">
-                <h3>International Competitions</h3>
-                <p>The Algerian team, selected through the Olympiad, will represent Algeria in international
-                    mathematical competitions like the International Mathematical Olympiad (IMO).</p>
-            </div>
-            <div>
-                <img src="fi-rr-trophy.png">
-                <h3>Algeria's Performance</h3>
-                <p>In previous years, Algeria has achieved notable results in the IMO, including winning a gold
-                    medal at
-                    the 65th session held in the UK.</p>
-            </div>
-            <div>
-                <img src="fi-rr-mode-portrait.png">
-                <h3>Ministry Support</h3>
-                <p>The Ministry of National Education recognizes the importance of mathematics education and
-                    provides
-                    support for initiatives like the Algerian Mathematical Olympiad.</p>
-            </div>
-            <div>
-                <img src="Vector.png">
-                <h3>Focus on Mathematics Education</h3>
-                <p>The Minister of National Education has emphasized improving the quality of mathematics
-                    education
-                    in
-                    Algeria, recognizing its crucial role in the country's future.</p>
-            </div>
-        </div>
-    </div>
-
-
-    <x-sep></x-sep>
-
-
-    <div id="planning">
-        <h2 style="text-align: center;">ALMO 2025 Timeline</h2>
-        <div class="schedule" id="timeline">
-
-
-        </div>
-    </div>
-
-    <x-sap></x-sap>
-
-
-    <div id="daily">
-        <h2>Daily Planning</h2>
-        <table class="pc-table">
-            <thead>
-                <tr>
-                    <th>Time</th>
-                    <th>07:30–08:15</th>
-                    <th>08:30–10:15</th>
-                    <th>10:15–10:45</th>
-                    <th>10:45–12:30</th>
-                    <th>12:30–14:15</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>Activity</th>
-                    <td>Breakfast</td>
-                    <td>Morning Session 1</td>
-                    <td>Snack</td>
-                    <td>Morning Session 2</td>
-                    <td>Lunch + Rest/Prayer Time</td>
-                </tr>
-            </tbody>
-            <thead>
-                <tr>
-                    <th>Time</th>
-                    <th>14:15–17:00</th>
-                    <th>17:00–20:00</th>
-                    <th>20:00–21:00</th>
-                    <th>21:00–22:30</th>
-                    <th>22:30</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>Activity</th>
-                    <td>Evening Session</td>
-                    <td>Extra Activities / Free Time</td>
-                    <td>Dinner</td>
-                    <td>Free Time</td>
-                    <td>Lights Out / Sleep</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <table class="mobile-table">
-            <thead>
-                <tr>
-                    <th>Time</th>
-                    <th>Activity</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>07:30–08:15</td>
-                    <td>Breakfast</td>
-                </tr>
-                <tr>
-                    <td>08:30–10:15</td>
-                    <td>Morning Session 1</td>
-                </tr>
-                <tr>
-                    <td>10:15–10:45</td>
-                    <td>Snack</td>
-                </tr>
-                <tr>
-                    <td>10:45–12:30</td>
-                    <td>Morning Session 2</td>
-                </tr>
-                <tr>
-                    <td>12:30–14:15</td>
-                    <td>Lunch + Rest/Prayer Time</td>
-                </tr>
-                <tr>
-                    <td>14:15–17:00</td>
-                    <td>Evening Session</td>
-                </tr>
-                <tr>
-                    <td>17:00–20:00</td>
-                    <td>Extra Activities / Free Time</td>
-                </tr>
-                <tr>
-                    <td>20:00–21:00</td>
-                    <td>Dinner</td>
-                </tr>
-                <tr>
-                    <td>21:00–22:30</td>
-                    <td>Free Time</td>
-                </tr>
-                <tr>
-                    <td>22:30</td>
-                    <td>Lights Out / Sleep</td>
-                </tr>
-            </tbody>
-        </table>
-
-    </div>
-
-    <x-sep></x-sep>
-
-
-
-    <div id="high-school">
-        <div class="high-school-container">
-            <div>
-                <h2>About the contest venue</h2>
-                <p>
-                    The contest will be held at the National Mathematical High School, located in the
-                    heart
-                    of Kouba, Algiers.
-                    This venue is well-equipped with modern facilities, including spacious classrooms,
-                    dormitories,
-                    a
-                    canteen, and recreational areas.
-                    The school provides an ideal environment for students to focus on their studies and engage
-                    in
-                    collaborative learning.
-
+                <div>
+                    <div style="display: block;" class="hero-content">
+                        <h1>Algerian Mathematical Olympiad 2025</h1>
+                        <p>The official website for the second edition of the
+                            most prestigious mathematics competition for
+                            middle and high school students.</p>
+                        <a class="more-btn" href="#almo">
+                            <span class="inner">See More</span>
+                        </a>
+                    </div>
+                </div>
             </div>
             <div>
                 <picture>
-                    <source srcset="hs.webp" type="image/webp">
-                    <img src="hs.jpg" alt="High School Facilities">
+                    <source srcset="infty.webp" type="image/webp">
+                    <img class="hero-img" src="infty.png">
                 </picture>
             </div>
         </div>
-    </div>
-    <x-sap></x-sap>
 
+        <x-sep></x-sep>
 
-    <div id="organizers">
-        <h2>Organizers</h2>
-        <div class="three-grid">
-            <div class="grid-item">
-                <a href="https://algerianmo.com" target="_blank">
-                    <img src="amo.svg" alt="AMO">
-                    <h3>The Algerian Mathematical Olympiad Training</h3>
-                </a>
+        <div id="almo">
+            <div class="almo-content" style="max-width: 1000px;">
+                <h2>Welcome to ALMO 2025</h2>
+                <p>
+                    The Algerian Mathematical Olympiad (ALMO) is a prestigious
+                    national mathematics competition designed
+                    for
+                    high school students across Algeria. Organized annually,
+                    ALMO serves as a platform to identify and
+                    nurture the most talented young mathematicians in the
+                    country. It aims not only to promote
+                    mathematical
+                    excellence but also to inspire a deep appreciation for the
+                    beauty and rigor of mathematical thinking
+                    among students.
+                </p>
+                <p>
+                    ALMO is held in alignment with the International
+                    Mathematical Olympiad (IMO) syllabus, covering key
+                    areas such as algebra, geometry, number theory, and
+                    combinatorics. The competition challenges
+                    students
+                    with creative, non-standard problems that test their
+                    problem-solving skills, logical reasoning, and
+                    mathematical ingenuity; well beyond the typical school
+                    curriculum.
+                </p>
+                <p>
+
+                    Top-performing students in ALMO are selected for further
+                    training and may earn the opportunity to
+                    represent Algeria in prestigious international competitions
+                    such as the IMO, the Pan-African
+                    Mathematics
+                    Olympiad (PAMO), and other global math contests.
+                </p>
+                <p>
+
+                    Through ALMO, Algeria strengthens its commitment to
+                    excellence in STEM education and contributes to
+                    the
+                    international mathematical community by cultivating a new
+                    generation of problem solvers, thinkers,
+                    and
+                    innovators.
+
+                </p>
             </div>
-            <div class="grid-item">
-                <a href="https://www.education.gov.dz/" target="_blank">
-                    <picture>
-                        <source srcset="men.webp" type="image/webp">
-                        <img src="men.png" alt="Ministry of National Education">
-                    </picture>
-                    <h3>Ministry of National Education</h3>
-                </a>
-            </div>
-            <div class="grid-item">
-                <a href="https://www.facebook.com/mhandmokhbi">
-                    <picture>
-                        <source srcset="ldm.webp" type="image/webp">
-                        <img src="ldm.png" alt="National Mathematical High School">
-                    </picture>
-                    <h3>National Mathematical High School</h3>
-                </a>
+            <div>
+                <picture>
+                    <source srcset="image3.webp" type="image/webp">
+                    <img src="image3.png" class="olymp hide-on-phone">
+                </picture>
             </div>
         </div>
-    </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <x-sap></x-sap>
+        <br>
+        <br>
+        <div style="margin-left: 10px;margin-right: 10px;">
+            <h2 style="text-align: center;">Key aspects of the Algerian
+                Mathematical Olympiad 2025</h2>
+            <div class="aspects-grid">
+                <div>
+                    <img src="fi-rr-user-remove.png">
+                    <h3>Selection Process</h3>
+                    <p>Students are initially selected based on their
+                        performance in mathematics during the school
+                        year,
+                        with a focus on those achieving a high average in their
+                        mathematics classes.</p>
+                </div>
+                <div>
+                    <img src="fi-rr-megaphone.png">
+                    <h3>Training Camp</h3>
+                    <p>Selected students participate in a week-long training
+                        camp where they receive intensive
+                        training
+                        and
+                        problem-solving practice.</p>
+                </div>
+                <div>
+                    <img src="fi-rr-plane.png">
+                    <h3>International Competitions</h3>
+                    <p>The Algerian team, selected through the Olympiad, will
+                        represent Algeria in international
+                        mathematical competitions like the International
+                        Mathematical Olympiad (IMO).</p>
+                </div>
+                <div>
+                    <img src="fi-rr-trophy.png">
+                    <h3>Algeria's Performance</h3>
+                    <p>In previous years, Algeria has achieved notable results
+                        in the IMO, including winning a gold
+                        medal at
+                        the 65th session held in the UK.</p>
+                </div>
+                <div>
+                    <img src="fi-rr-mode-portrait.png">
+                    <h3>Ministry Support</h3>
+                    <p>The Ministry of National Education recognizes the
+                        importance of mathematics education and
+                        provides
+                        support for initiatives like the Algerian Mathematical
+                        Olympiad.</p>
+                </div>
+                <div>
+                    <img src="Vector.png">
+                    <h3>Focus on Mathematics Education</h3>
+                    <p>The Minister of National Education has emphasized
+                        improving the quality of mathematics
+                        education
+                        in
+                        Algeria, recognizing its crucial role in the country's
+                        future.</p>
+                </div>
+            </div>
+        </div>
 
-    <x-sep></x-sep>
+        <x-sep></x-sep>
 
+        <div id="planning">
+            <h2 style="text-align: center;">ALMO 2025 Timeline</h2>
+            <div class="schedule" id="timeline">
 
-    <div>
-        <h2 style="text-align: center;">The people who made this possible</h2>
-
-        <table class="pc-table">
-            <tr>
-                <th>Organizing Committee</th>
-                <th>Academic Committee</th>
-                <th>Technical Committee</th>
-            </tr>
-            <tr>
-                <td>Ahmed Adnane Meddah</td>
-                <td>Abdellah Rahmani</td>
-                <td>Abdelhak Aliouat</td>
-            </tr>
-            <tr>
-                <td>Azeddine Lekkam Kacem</td>
-                <td>Ali Ben Chikh</td>
-                <td>Abdelkader Lahmar</td>
-            </tr>
-            <tr>
-                <td>Chams Eddine Abdelali Derreche</td>
-                <td>Assil Abderrezak Boukhennoufa</td>
-                <td>Aboubakr Bendahmane</td>
-            </tr>
-            <tr>
-                <td>Fatima Zahra Kihel</td>
-                <td>Haithem Ait Hamadouche</td>
-                <td>Alaeddine Gadi</td>
-            </tr>
-            <tr>
-                <td>Mohamed Boukra</td>
-                <td>Manar Benmokhtar</td>
-                <td>Amani Sebti</td>
-            </tr>
-            <tr>
-                <td>Nor El Yaquin Meriem Doum</td>
-                <td>Meriem Arif</td>
-                <td>Ayat Errahmane Nacer</td>
-            </tr>
-            <tr>
-                <td>Raouf Ould Ali</td>
-                <td>Mohamed Adel Amirouche</td>
-                <td>Benammour Rihab Meriem</td>
-            </tr>
-            <tr>
-                <td>Said Kebir</td>
-                <td>Mohamed Amir Benmelouka</td>
-                <td>Chadha Yasmin Brahmi</td>
-            </tr>
-            <tr>
-                <td>Yasser Merabet</td>
-                <td>Mohammed Al Ghazali Meghabber</td>
-                <td>Cherifa Merdaci</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>Mohammed Amine Boukhalfa</td>
-                <td>Delenda Nour El Imene</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>Rassim Cherir</td>
-                <td>Fetoui Ranim</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>Sami Bouhanguel</td>
-                <td>Hassoun Nedjar Mohamed Kacem</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>Sidali Abdellaoui</td>
-                <td>Mohamed Charaf Eddine Deghboudj</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>Youcef Kenane</td>
-                <td>Yasmine Fatma Bouhadef</td>
-            </tr>
-        </table>
-
-        <div class="mobile-tables">
-            <table class="mobile-table">
-                <tr>
-                    <th>Organizing Committee</th>
-                </tr>
-                <tr>
-                    <td>Ahmed Adnane Meddah</td>
-                </tr>
-                <tr>
-                    <td>Azeddine Lekkam Kacem</td>
-                </tr>
-                <tr>
-                    <td>Chams Eddine Abdelali Derreche</td>
-                </tr>
-                <tr>
-                    <td>Fatima Zahra Kihel</td>
-                </tr>
-                <tr>
-                    <td>Mohamed Boukra</td>
-                </tr>
-                <tr>
-                    <td>Nor El Yaquin Meriem Doum</td>
-                </tr>
-                <tr>
-                    <td>Raouf Ould Ali</td>
-                </tr>
-                <tr>
-                    <td>Said Kebir</td>
-                </tr>
-                <tr>
-                    <td>Yasser Merabet</td>
-                </tr>
-            </table>
-
-            <table class="mobile-table">
-                <tr>
-                    <th>Academic Committee</th>
-                </tr>
-                <tr>
-                    <td>Abdellah Rahmani</td>
-                </tr>
-                <tr>
-                    <td>Ali Ben Chikh</td>
-                </tr>
-                <tr>
-                    <td>Assil Abderrezak Boukhennoufa</td>
-                </tr>
-                <tr>
-                    <td>Haithem Ait Hamadouche</td>
-                </tr>
-                <tr>
-                    <td>Manar Benmokhtar</td>
-                </tr>
-                <tr>
-                    <td>Meriem Arif</td>
-                </tr>
-                <tr>
-                    <td>Mohamed Adel Amirouche</td>
-                </tr>
-                <tr>
-                    <td>Mohamed Amir Benmelouka</td>
-                </tr>
-                <tr>
-                    <td>Mohammed Al Ghazali Meghabber</td>
-                </tr>
-                <tr>
-                    <td>Mohammed Amine Boukhalfa</td>
-                </tr>
-                <tr>
-                    <td>Rassim Cherir</td>
-                </tr>
-                <tr>
-                    <td>Sami Bouhanguel</td>
-                </tr>
-                <tr>
-                    <td>Sidali Abdellaoui</td>
-                </tr>
-                <tr>
-                    <td>Youcef Kenane</td>
-                </tr>
-            </table>
-
-            <table class="mobile-table">
-                <tr>
-                    <th>Technical Committee</th>
-                </tr>
-                <tr>
-                    <td>Abdelhak Aliouat</td>
-                </tr>
-                <tr>
-                    <td>Abdelkader Lahmar</td>
-                </tr>
-                <tr>
-                    <td>Aboubakr Bendahmane</td>
-                </tr>
-                <tr>
-                    <td>Alaeddine Gadi</td>
-                </tr>
-                <tr>
-                    <td>Amani Sebti</td>
-                </tr>
-                <tr>
-                    <td>Ayat Errahmane Nacer</td>
-                </tr>
-                <tr>
-                    <td>Benammour Rihab Meriem</td>
-                </tr>
-                <tr>
-                    <td>Chadha Yasmin Brahmi</td>
-                </tr>
-                <tr>
-                    <td>Cherifa Merdaci</td>
-                </tr>
-                <tr>
-                    <td>Delenda Nour El Imene</td>
-                </tr>
-                <tr>
-                    <td>Fetoui Ranim</td>
-                </tr>
-                <tr>
-                    <td>Hassoun Nedjar Mohamed Kacem</td>
-                </tr>
-                <tr>
-                    <td>Mohamed Charaf Eddine Deghboudj</td>
-                </tr>
-                <tr>
-                    <td>Yasmine Fatma Bouhadef</td>
-                </tr>
-            </table>
-
-
+            </div>
         </div>
 
         <x-sap></x-sap>
 
+        <div id="daily">
+            <h2>Daily Planning</h2>
+            <table class="pc-table">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>07:30–08:15</th>
+                        <th>08:30–10:15</th>
+                        <th>10:15–10:45</th>
+                        <th>10:45–12:30</th>
+                        <th>12:30–14:15</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Activity</th>
+                        <td>Breakfast</td>
+                        <td>Morning Session 1</td>
+                        <td>Snack</td>
+                        <td>Morning Session 2</td>
+                        <td>Lunch + Rest/Prayer Time</td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>14:15–17:00</th>
+                        <th>17:00–20:00</th>
+                        <th>20:00–21:00</th>
+                        <th>21:00–22:30</th>
+                        <th>22:30</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Activity</th>
+                        <td>Evening Session</td>
+                        <td>Extra Activities / Free Time</td>
+                        <td>Dinner</td>
+                        <td>Free Time</td>
+                        <td>Lights Out / Sleep</td>
+                    </tr>
+                </tbody>
+            </table>
 
-        <div id="animators">
-            <h2>Entertainement Partners</h2>
-            <div class="five-grid">
-                <div class="grid-item2">
-                    <a href="https://taplink.cc/eureka.club" target="_blank">
-                        <img src="eureka.svg" alt="Eureka">
-                        <h3>Eureka Scientific Club</h3>
-                    </a>
-                </div>
-                <div class="grid-item2">
-                    <a href="https://www.linkedin.com/company/vicenp" target="_blank">
-                        <picture>
-                            <source srcset="vic.webp" type="image/webp">
+            <table class="mobile-table">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Activity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>07:30–08:15</td>
+                        <td>Breakfast</td>
+                    </tr>
+                    <tr>
+                        <td>08:30–10:15</td>
+                        <td>Morning Session 1</td>
+                    </tr>
+                    <tr>
+                        <td>10:15–10:45</td>
+                        <td>Snack</td>
+                    </tr>
+                    <tr>
+                        <td>10:45–12:30</td>
+                        <td>Morning Session 2</td>
+                    </tr>
+                    <tr>
+                        <td>12:30–14:15</td>
+                        <td>Lunch + Rest/Prayer Time</td>
+                    </tr>
+                    <tr>
+                        <td>14:15–17:00</td>
+                        <td>Evening Session</td>
+                    </tr>
+                    <tr>
+                        <td>17:00–20:00</td>
+                        <td>Extra Activities / Free Time</td>
+                    </tr>
+                    <tr>
+                        <td>20:00–21:00</td>
+                        <td>Dinner</td>
+                    </tr>
+                    <tr>
+                        <td>21:00–22:30</td>
+                        <td>Free Time</td>
+                    </tr>
+                    <tr>
+                        <td>22:30</td>
+                        <td>Lights Out / Sleep</td>
+                    </tr>
+                </tbody>
+            </table>
 
-                            <img src="vic.png" alt="VIC">
-                        </picture>
-                        <h3>Vision & Innovation Club</h3>
-                    </a>
-                </div>
-                <div class="grid-item2">
-                    <a href="https://www.linkedin.com/company/mathtec" target="_blank">
+        </div>
+
+        <x-sep></x-sep>
+
+        <div id="high-school">
+            <div class="high-school-container">
+                <div>
+                    <h2>About the contest venue</h2>
+                    <p>
+                        The contest will be held at the National Mathematical
+                        High School, located in the
+                        heart
+                        of Kouba, Algiers.
+                        This venue is well-equipped with modern facilities,
+                        including spacious classrooms,
+                        dormitories,
+                        a
+                        canteen, and recreational areas.
+                        The school provides an ideal environment for students to
+                        focus on their studies and engage
+                        in
+                        collaborative learning.
+
+                    </div>
+                    <div>
                         <picture>
-                            <source srcset="mathtec.webp" type="image/webp">
-                            <img src="mathtec.png" alt="MathTec">
+                            <source srcset="hs.webp" type="image/webp">
+                            <img src="hs.jpg" alt="High School Facilities">
                         </picture>
-                        <h3>MathTec</h3>
-                    </a>
-                </div>
-                <div class="grid-item2 phone-center">
-                    <a href="https://algerianoi.com" target="_blank">
-                        <picture>
-                            <source srcset="aoi.webp" type="image/webp">
-                            <img src="aoi.png" alt="MathTec">
-                        </picture>
-                        <h3>Algerian Olympiad in Informatics</h3>
-                    </a>
+                    </div>
                 </div>
             </div>
+            <x-sap></x-sap>
+
+            <div id="organizers">
+                <h2>Organizers</h2>
+                <div class="three-grid">
+                    <div class="grid-item">
+                        <a href="https://algerianmo.com" target="_blank">
+                            <img src="amo.svg" alt="AMO">
+                            <h3>The Algerian Mathematical Olympiad Training</h3>
+                        </a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="https://www.education.gov.dz/" target="_blank">
+                            <picture>
+                                <source srcset="men.webp" type="image/webp">
+                                <img src="men.png"
+                                    alt="Ministry of National Education">
+                            </picture>
+                            <h3>Ministry of National Education</h3>
+                        </a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="https://www.facebook.com/mhandmokhbi">
+                            <picture>
+                                <source srcset="ldm.webp" type="image/webp">
+                                <img src="ldm.png"
+                                    alt="National Mathematical High School">
+                            </picture>
+                            <h3>National Mathematical High School</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            
+
+<x-sep></x-sep>
+
+<div id="exams" style="padding: 0 10px;">
+    <h2 style="text-align: center;">ALMO 2025 - contest exams</h2>
+   
+    <div class="exam-grid">
+        <div class="exam-section">
+            <h3>Senior Category</h3>
+            <ul>
+                <li><a href="senior-day1.pdf" target="_blank">Day 1 </a></li>
+                <li><a href="senior-day2.pdf" target="_blank">Day 2 </a></li>
+                <li><a href="senior.pdf" target="_blank"> results</a></li>
+            </ul>
+
         </div>
-
-
-        <div id="footer">
-            <p>&copy; 2025 Algerian Mathematical Olympiad — Made by <a href="https://speedcode210.github.io">Raouf
-                    Ould Ali</a> x <a href="https://www.linkedin.com/in/benammour-rihab-meriem-a972a1314/">Benammour
-                    Rihab Meriem</a>.</p>
+        <div class="exam-section">
+            <h3>Junior Category</h3>
+            <ul>
+                <li><a href="junior-day1.pdf" target="_blank">Day 1 </a></li>
+                <li><a href="junior-day2.pdf" target="_blank">Day 2 </a></li>
+                <li><a href="junior.pdf" target="_blank"> results </a></li>
+            </ul>
         </div>
+        <div class="exam-section">
+            <h3>Benjamin Category</h3>
+            <ul>
+                <li><a href="benjamin-day1.pdf" target="_blank">Day 1 </a></li>
+                <li><a href="benjamin-day2.pdf" target="_blank">Day 2 </a></li>
+                <li><a href="BINJAMIN.pdf" target="_blank">results</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
 
-</body>
-<script>
+
+            <x-sep></x-sep>
+
+            <div>
+                <h2 style="text-align: center;">The people who made this
+                    possible</h2>
+
+                <table class="pc-table">
+                    <tr>
+                        <th>Organizing Committee</th>
+                        <th>Academic Committee</th>
+                        <th>Technical Committee</th>
+                    </tr>
+                    <tr>
+                        <td>Ahmed Adnane Meddah</td>
+                        <td>Abdellah Rahmani</td>
+                        <td>Abdelhak Aliouat</td>
+                    </tr>
+                    <tr>
+                        <td>Azeddine Lekkam Kacem</td>
+                        <td>Ali Ben Chikh</td>
+                        <td>Abdelkader Lahmar</td>
+                    </tr>
+                    <tr>
+                        <td>Chams Eddine Abdelali Derreche</td>
+                        <td>Assil Abderrezak Boukhennoufa</td>
+                        <td>Aboubakr Bendahmane</td>
+                    </tr>
+                    <tr>
+                        <td>Fatima Zahra Kihel</td>
+                        <td>Haithem Ait Hamadouche</td>
+                        <td>Alaeddine Gadi</td>
+                    </tr>
+                    <tr>
+                        <td>Mohamed Boukra</td>
+                        <td>Manar Benmokhtar</td>
+                        <td>Amani Sebti</td>
+                    </tr>
+                    <tr>
+                        <td>Nor El Yaquin Meriem Doum</td>
+                        <td>Meriem Arif</td>
+                        <td>Ayat Errahmane Nacer</td>
+                    </tr>
+                    <tr>
+                        <td>Raouf Ould Ali</td>
+                        <td>Mohamed Adel Amirouche</td>
+                        <td>Benammour Rihab Meriem</td>
+                    </tr>
+                    <tr>
+                        <td>Said Kebir</td>
+                        <td>Mohamed Amir Benmelouka</td>
+                        <td>Chadha Yasmin Brahmi</td>
+                    </tr>
+                    <tr>
+                        <td>Yasser Merabet</td>
+                        <td>Mohammed Al Ghazali Meghabber</td>
+                        <td>Cherifa Merdaci</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Mohammed Amine Boukhalfa</td>
+                        <td>Delenda Nour El Imene</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Rassim Cherir</td>
+                        <td>Fetoui Ranim</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Sami Bouhanguel</td>
+                        <td>Hassoun Nedjar Mohamed Kacem</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Sidali Abdellaoui</td>
+                        <td>Mohamed Charaf Eddine Deghboudj</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Youcef Kenane</td>
+                        <td>Yasmine Fatma Bouhadef</td>
+                    </tr>
+                </table>
+
+                <div class="mobile-tables">
+                    <table class="mobile-table">
+                        <tr>
+                            <th>Organizing Committee</th>
+                        </tr>
+                        <tr>
+                            <td>Ahmed Adnane Meddah</td>
+                        </tr>
+                        <tr>
+                            <td>Azeddine Lekkam Kacem</td>
+                        </tr>
+                        <tr>
+                            <td>Chams Eddine Abdelali Derreche</td>
+                        </tr>
+                        <tr>
+                            <td>Fatima Zahra Kihel</td>
+                        </tr>
+                        <tr>
+                            <td>Mohamed Boukra</td>
+                        </tr>
+                        <tr>
+                            <td>Nor El Yaquin Meriem Doum</td>
+                        </tr>
+                        <tr>
+                            <td>Raouf Ould Ali</td>
+                        </tr>
+                        <tr>
+                            <td>Said Kebir</td>
+                        </tr>
+                        <tr>
+                            <td>Yasser Merabet</td>
+                        </tr>
+                    </table>
+
+                    <table class="mobile-table">
+                        <tr>
+                            <th>Academic Committee</th>
+                        </tr>
+                        <tr>
+                            <td>Abdellah Rahmani</td>
+                        </tr>
+                        <tr>
+                            <td>Ali Ben Chikh</td>
+                        </tr>
+                        <tr>
+                            <td>Assil Abderrezak Boukhennoufa</td>
+                        </tr>
+                        <tr>
+                            <td>Haithem Ait Hamadouche</td>
+                        </tr>
+                        <tr>
+                            <td>Manar Benmokhtar</td>
+                        </tr>
+                        <tr>
+                            <td>Meriem Arif</td>
+                        </tr>
+                        <tr>
+                            <td>Mohamed Adel Amirouche</td>
+                        </tr>
+                        <tr>
+                            <td>Mohamed Amir Benmelouka</td>
+                        </tr>
+                        <tr>
+                            <td>Mohammed Al Ghazali Meghabber</td>
+                        </tr>
+                        <tr>
+                            <td>Mohammed Amine Boukhalfa</td>
+                        </tr>
+                        <tr>
+                            <td>Rassim Cherir</td>
+                        </tr>
+                        <tr>
+                            <td>Sami Bouhanguel</td>
+                        </tr>
+                        <tr>
+                            <td>Sidali Abdellaoui</td>
+                        </tr>
+                        <tr>
+                            <td>Youcef Kenane</td>
+                        </tr>
+                    </table>
+
+                    <table class="mobile-table">
+                        <tr>
+                            <th>Technical Committee</th>
+                        </tr>
+                        <tr>
+                            <td>Abdelhak Aliouat</td>
+                        </tr>
+                        <tr>
+                            <td>Abdelkader Lahmar</td>
+                        </tr>
+                        <tr>
+                            <td>Aboubakr Bendahmane</td>
+                        </tr>
+                        <tr>
+                            <td>Alaeddine Gadi</td>
+                        </tr>
+                        <tr>
+                            <td>Amani Sebti</td>
+                        </tr>
+                        <tr>
+                            <td>Ayat Errahmane Nacer</td>
+                        </tr>
+                        <tr>
+                            <td>Benammour Rihab Meriem</td>
+                        </tr>
+                        <tr>
+                            <td>Chadha Yasmin Brahmi</td>
+                        </tr>
+                        <tr>
+                            <td>Cherifa Merdaci</td>
+                        </tr>
+                        <tr>
+                            <td>Delenda Nour El Imene</td>
+                        </tr>
+                        <tr>
+                            <td>Fetoui Ranim</td>
+                        </tr>
+                        <tr>
+                            <td>Hassoun Nedjar Mohamed Kacem</td>
+                        </tr>
+                        <tr>
+                            <td>Mohamed Charaf Eddine Deghboudj</td>
+                        </tr>
+                        <tr>
+                            <td>Yasmine Fatma Bouhadef</td>
+                        </tr>
+                    </table>
+
+                </div>
+
+                <x-sap></x-sap>
+
+                <div id="animators">
+                    <h2>Entertainement Partners</h2>
+                    <div class="five-grid">
+                        <div class="grid-item2">
+                            <a href="https://taplink.cc/eureka.club"
+                                target="_blank">
+                                <img src="eureka.svg" alt="Eureka">
+                                <h3>Eureka Scientific Club</h3>
+                            </a>
+                        </div>
+                        <div class="grid-item2">
+                            <a href="https://www.linkedin.com/company/vicenp"
+                                target="_blank">
+                                <picture>
+                                    <source srcset="vic.webp" type="image/webp">
+
+                                    <img src="vic.png" alt="VIC">
+                                </picture>
+                                <h3>Vision & Innovation Club</h3>
+                            </a>
+                        </div>
+                        <div class="grid-item2">
+                            <a href="https://www.linkedin.com/company/mathtec"
+                                target="_blank">
+                                <picture>
+                                    <source srcset="mathtec.webp"
+                                        type="image/webp">
+                                    <img src="mathtec.png" alt="MathTec">
+                                </picture>
+                                <h3>MathTec</h3>
+                            </a>
+                        </div>
+                        <div class="grid-item2 phone-center">
+                            <a href="https://algerianoi.com" target="_blank">
+                                <picture>
+                                    <source srcset="aoi.webp" type="image/webp">
+                                    <img src="aoi.png" alt="MathTec">
+                                </picture>
+                                <h3>Algerian Olympiad in Informatics</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="footer">
+                    <p>&copy; 2025 Algerian Mathematical Olympiad — Made by <a
+                            href="https://speedcode210.github.io">Raouf
+                            Ould Ali</a> x <a
+                            href="https://www.linkedin.com/in/benammour-rihab-meriem-a972a1314/">Benammour
+                            Rihab Meriem</a>.</p>
+                </div>
+
+            </body>
+            <script>
     function navToggle() {
         document.getElementById('navElements').classList.toggle('showed-nav');
     }
 </script>
-<script src="script.js"></script>
+            <script src="script.js"></script>
 
-</html>
+        </html>
